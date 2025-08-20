@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Stock Ticker Duel</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <img src="duel-banner.png" alt="Stock Duel Banner" class="banner" />
+    <h1>Wall Street Showdown</h1>
+    <p class="tagline">Where Ratios Rule the Ring!</p>
+  </header>
+
+  <main>
+    <form id="duelForm">
+      <input type="text" id="ticker1" placeholder="Enter first stock ticker" required />
+      <input type="text" id="ticker2" placeholder="Enter second stock ticker" required />
+      <button type="submit">Start Duel</button>
+    </form>
+
+    <section id="results" class="scorecard hidden">
+      <div class="company" id="company1">
+        <img id="logo1" class="logo" />
+        <h2 id="name1"></h2>
+        <ul id="ratios1"></ul>
+      </div>
+      <div class="company" id="company2">
+        <img id="logo2" class="logo" />
+        <h2 id="name2"></h2>
+        <ul id="ratios2"></ul>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
