@@ -21,18 +21,26 @@
       <button type="submit">Start Duel</button>
     </form>
 
-    <section id="results" class="scorecard hidden">
-      <div class="company" id="company1">
-        <img id="logo1" class="logo" />
-        <h2 id="name1"></h2>
-        <ul id="ratios1"></ul>
-      </div>
-      <div class="company" id="company2">
-        <img id="logo2" class="logo" />
-        <h2 id="name2"></h2>
-        <ul id="ratios2"></ul>
-      </div>
-    </section>
+ 
+<section id="results" class="scorecard hidden">
+  <div class="scorecard-grid">
+    <div class="company" id="company1">
+      <img id="logo1" class="logo" />
+      <h2 id="name1"></h2>
+      <ul id="ratios1" class="ratios"></ul>
+    </div>
+    <div class="ratios-center">
+      <h3>Ratios</h3>
+      <ul id="ratioNames" class="ratios"></ul>
+    </div>
+    <div class="company" id="company2">
+      <img id="logo2" class="logo" />
+      <h2 id="name2"></h2>
+      <ul id="ratios2" class="ratios"></ul>
+    </div>
+  </div>
+</section>
+
   </main>
 
   <script src="script.js"></script>
